@@ -3,23 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario con Servicios Web Gratuitos</title>
+    <title>Formulario de Contacto Minimalista</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="form-container">
-        <h1>Elige un Servicio Web Gratuito</h1>
-        <form>
-            <label for="service">Selecciona un servicio:</label>
-            <select id="service" name="service">
-                <option value="github">GitHub Pages</option>
-                <option value="netlify">Netlify</option>
-                <option value="vercel">Vercel</option>
-                <option value="firebase">Firebase Hosting</option>
-                <option value="heroku">Heroku</option>
-            </select>
-            <input type="submit" value="Enviar">
-        </form>
+    <div class="wrapper">
+        <header>
+            <h1>Formulario de Contacto</h1>
+            <p>Por favor, rellena tus datos a continuación:</p>
+        </header>
+
+        <section class="form-section">
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Sección para los servicios gratuitos -->
+        <section class="services-section">
+            <h2>Servicios Interactivos</h2>
+
+            <div id="current-time" class="service-item">
+                <h3>Hora Actual:</h3>
+                <p id="time"></p>
+            </div>
+
+            <div id="weather" class="service-item">
+                <h3>Clima Actual:</h3>
+                <p id="weather-info">Cargando clima...</p>
+            </div>
+
+            <div id="calculator" class="service-item">
+                <h3>Calculadora Básica</h3>
+                <input type="number" id="num1" placeholder="Número 1">
+                <input type="number" id="num2" placeholder="Número 2">
+                <button onclick="calculate()">Calcular</button>
+                <p id="calc-result"></p>
+            </div>
+
+            <div id="visit-counter" class="service-item">
+                <h3>Contador de Visitas:</h3>
+                <p id="visit-count">Cargando...</p>
+            </div>
+        </section>
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
