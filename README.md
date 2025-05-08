@@ -18,3 +18,6 @@ Este proyecto fue desarrollado como práctica inicial en el aprendizaje de desar
 - **APIs globales (openweathermap, Date, etc.)**
 
 ## 📸 Captura de Pantalla
+![image](https://github.com/user-attachments/assets/71c8b531-f830-4e54-8aa9-1a40726c64bb)
+![image](https://github.com/user-attachments/assets/c59e9214-7e49-4d8b-a0e2-d5aec2e290cf)
+
